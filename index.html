@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div class="input">
+        <button class="createGridBtn">Create New Grid</button>
+        <form>
+            <input type="checkbox" name="gridLines" id="gridLines" checked> Gridlines
+        </form>
+    </div>
+    <div class="gridContainer"></div>
+    <dialog class="modal" id="modal">
+        <form method="dialog">
+            <label for="squareNumInput">Enter the number of squares down and across</label>
+            <input type="text" id="squareNumInput" autofocus>
+            <input type="submit" id="submit">
+        </form>
+    </dialog>
+</body>
+</html>

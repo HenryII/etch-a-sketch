@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0 10px 0;
+    /* margin-top: 10px; */
+    background-color: darkgrey;
+}
+
+.createGridBtn {
+    height: 50px;
+    width: 150px;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: none;
+    /* margin: 10px auto; */
+    font-size: 16px;
+}
+
+.createGridBtn:hover {
+    background-color: lightskyblue;
+    cursor:pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    margin: 90px auto;
+    background-color: ghostwhite;
+}
+
+#gridLines:hover {
+    cursor: pointer;
+}
+
+.modal {
+    position:absolute;
+    top: 90px;
+    left: 500px;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: white; 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+
+}
+
+.modal > form > label {
+    margin-top: 25px;
+}
+
+#squareNumInput {
+    width: 60px;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+#submit {
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.close {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: -15px;
+    font-size: 24px;
+}

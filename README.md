@@ -1,1 +1,2 @@
 # etch-a-sketch
+This program tested and demonstrates my current knowledge of DOM manipulation. It creates a sketchpad of sorts, using a combination of a grid of squares and the different colors that's created with the cursor hover effect.
